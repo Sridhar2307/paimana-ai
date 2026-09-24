@@ -1,0 +1,12 @@
+{
+  "name": "paimana-ai-backend-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test:db": "node testSupabase.js",
+    "seed:db": "node seedSupabase.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.0"
+  }
+}

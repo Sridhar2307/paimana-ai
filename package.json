@@ -1,0 +1,18 @@
+{
+  "name": "paimana-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node start_dev.js",
+    "dev:frontend": "npm --prefix paimana-ai-llm-assistant/paimana-ai/frontend run dev",
+    "dev:backend": "node paimana-ai-llm-assistant/paimana-ai/backend/run_backend.py",
+    "build": "npm --prefix paimana-ai-llm-assistant/paimana-ai/frontend run build",
+    "test:db": "npm --prefix paimana-ai-llm-assistant/paimana-ai/backend run test:db",
+    "seed:db": "npm --prefix paimana-ai-llm-assistant/paimana-ai/backend run seed:db"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.0"
+  }
+}
